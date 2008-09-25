@@ -21,12 +21,12 @@ Usage
 -----
 
 Change the constants within nib.rb to match your settings:
-
-  `BUCKET_NAME = "Your S3 Bucket name"
+  
+  BUCKET_NAME = "Your S3 Bucket name"
   ACCESS_KEY = "Your S3 Access Key"
   SECRET_ACCESS_KEY = "Your S3 Secret Access Key"
   BACKUP_PATH = "/Path/to/backup"
-  BUCKET_PREFIX = "Your Model Prefix" # Restricts the response to only contain results that begin with the specified prefix.`
+  BUCKET_PREFIX = "Your Model Prefix" # Restricts the response to only contain results that begin with the specified prefix.
 
   `run ruby nib.rb &`
 
