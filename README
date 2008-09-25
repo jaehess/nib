@@ -1,0 +1,4 @@
+NIB is a script for the paranoid, to backup your S3 buckets to a local Volume
+
+Dependencies:
+AWS/S3 Gem
