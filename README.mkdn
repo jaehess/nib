@@ -1,0 +1,32 @@
+NIB
+===
+
+NIB is a script for the paranoid, that will backup your S3 buckets to a local volume (or locally connected storage device).
+NIB was designed specifically for S3 objects created by Rick Olson's `attachment_fu plugin`, so it synchronizes assuming that any new files will come alpha-numerically after the previous.
+
+Why?
+----
+
+There are about a million scripts to backup data TO S3, but none support coming FROM S3.
+All non script methods (Transmit, etc) had poor error handling, timeouts, etc. (babysitting 400,000+ files transferring is no fun at all)
+
+Dependencies
+------------
+
+NIB requires the `AWS/S3 Gem`:
+
+    gem install aws-s3
+    
+Usage
+-----
+
+Change the constants within nib.rb to match your settings:
+
+  BUCKET_NAME = "Your S3 Bucket name"
+  ACCESS_KEY = "Your S3 Access Key"
+  SECRET_ACCESS_KEY = "Your S3 Secret Access Key"
+  BACKUP_PATH = "/Path/to/backup"
+  BUCKET_PREFIX = "Your Model Prefix" # Restricts the response to only contain results that begin with the specified prefix.
+
+  `run ruby nib.rb &`
+
