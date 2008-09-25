@@ -28,5 +28,7 @@ Change the constants within nib.rb to match your settings:
     BACKUP\_PATH = "/Path/to/backup"
     BUCKET\_PREFIX = "Your Model Prefix" # Restricts the response to only contain results that begin with the specified prefix.
 
-  `run ruby nib.rb &`
+Then you can run:
+
+  `ruby nib.rb &`
 
